@@ -1,5 +1,6 @@
 import { Controller, Get, Render } from '@nestjs/common';
 import { AppService } from './app.service';
+import { NewAnimalDto } from './newAnimalDto';
 
 @Controller()
 export class AppController {
