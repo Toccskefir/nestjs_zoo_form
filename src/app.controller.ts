@@ -35,8 +35,8 @@ export class AppController {
     if (newAnimal.name.trim() === '') {
       errors.push('Adja meg az állat nevét!');
     }
-    if (newAnimal.age < 0 || isNaN(newAnimal.age)) {
-      errors.push('Az állat életkora nem lehet negatív szám!');
+    if (newAnimal.age <= 0 || isNaN(newAnimal.age)) {
+      errors.push('Az állat életkora legalább 1 év kell legyen!');
     }
 
     if (errors.length > 0) {
