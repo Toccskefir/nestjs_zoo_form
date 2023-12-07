@@ -9,9 +9,9 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <h1>Új állat felvétele az állatkertbe</h1>
+    <h1>Új beköltöző állat felvétele az állatkertbe</h1>
 
-    <form action="post">
+    <form method="post">
         <label>
             Neve:
             <input type="text" name="name">
@@ -24,7 +24,7 @@
     
         <label>
             Fajtája:
-            <select>
+            <select name="species">
                 <option value="növényevő">Növényevő</option>
                 <option value="ragadozó">Ragadozó</option>
                 <option value="mindenevő">Mindenevő</option>
