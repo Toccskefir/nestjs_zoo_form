@@ -31,6 +31,10 @@
             </select>
         </label><br>
 
+        <% errors.forEach(item => { %>
+            <p style="color: red;"><%= item %></p>
+        <% }); %>
+
         <input type="submit" value="Felvétel">
     </form>
 </body>
