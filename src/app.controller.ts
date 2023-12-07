@@ -16,8 +16,9 @@ export class AppController {
 
   @Get()
   @Render('index')
-  index() {
-    return { title: 'Állatok' };
+  async index() {
+    const [data] = await conn.execute('SELECT id, name, age, species FROM animals');
+    return { title: 'Állatok', index: data };
   }
 
   @Get('/form')

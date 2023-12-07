@@ -9,6 +9,22 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <p><%= title %></p>
+    <h1>Állatkertbe költöző új állatok</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Neve</th>
+                <th>Kora</th>
+                <th>Fajtája</th>
+            </tr>
+            <% index.forEach( index => { %>
+                <tr>
+                    <td><%= index.name %></td>
+                    <td><%= index.age %></td>
+                    <td><%= index.species %></td>
+                </tr>
+            <% }); %>
+        </thead>
+    </table>
 </body>
 </html>
